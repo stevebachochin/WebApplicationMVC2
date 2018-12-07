@@ -1,0 +1,240 @@
+﻿@model WebApplicationMVC2.Models.Field
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Field</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Lang)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Lang)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Created)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Created)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CTitle)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CTitle)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FacName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FacName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FacAddress)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FacAddress)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FacPhone)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FacPhone)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SurgeonName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SurgeonName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SurgeonEmail)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SurgeonEmail)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CryolifeRep)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CryolifeRep)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RegionMgr)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RegionMgr)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LetterAck)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LetterAck)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LetterFinal)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LetterFinal)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LetterNone)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LetterNone)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LetterSendTo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LetterSendTo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ReturnSample)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ReturnSample)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RMANumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RMANumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Product)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Product)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SerialLotNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SerialLotNumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UDI)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UDI)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Implanted)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Implanted)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DateIncident)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DateIncident)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DateReported)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DateReported)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Outcome)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Outcome)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Description)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DocumentNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DocumentNumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EffectiveDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EffectiveDate)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>
